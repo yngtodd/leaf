@@ -1,4 +1,4 @@
-<h1>Leaf<img src='https://github.com/yngtodd/leaf/blob/main/img/leaf.png' align='right' width='180' height='104'></h1>
+<h1>Leaf<img src='https://github.com/yngtodd/leaf/blob/main/img/leaf.png' align='right' width='180' height='180'></h1>
 
 
 ![Python package](https://github.com/yngtodd/leaf/workflows/Python%20package/badge.svg)
