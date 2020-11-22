@@ -21,5 +21,5 @@ def Softmax(Module):
         super(Softmax, self).__init__()
 
     def forward(self, x, dim=1):
-        return F.softmax(x)
+        return F.softmax(x, dim=dim)
 
