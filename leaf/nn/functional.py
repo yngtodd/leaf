@@ -6,7 +6,7 @@ def relu(x):
     return np.maximum(0, x)
 
 
-def softmax(x):
+def softmax(x, dim=1):
     f"""Softmax activation function"""
     exp = np.exp(x)
-    return exp / np.sum(exp)
+    return exp / np.sum(exp, axis=dim, keepdims=True)
