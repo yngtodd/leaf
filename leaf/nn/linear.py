@@ -1,7 +1,9 @@
 import numpy as np
 
+from .module import Module
 
-class Linear:
+
+class Linear(Module):
     r"""Fully connected layer
 
     Args:
@@ -10,11 +12,9 @@ class Linear:
     """
 
     def __init__(self, n_inputs, n_neurons):
+        super(Module, self).__init__()
         self.weights = 0.01 * np.random.randn(n_inputs, n_neurons)
         self.biases = np.zeros((1, n_neurons))
-
-    def __call__(self, x):
-        return self.forward(x)
 
     def forward(self, x):
         return np.dot(x, self.weights) + self.biases
