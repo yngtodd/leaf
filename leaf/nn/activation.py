@@ -13,3 +13,13 @@ class ReLU(Module):
     def forward(self, x):
         return F.relu(x)
 
+
+def Softmax(Module):
+    r"""Softmax activation function"""
+
+    def __init__(self):
+        super(Softmax, self).__init__()
+
+    def forward(self, x):
+        return F.softmax(x)
+
